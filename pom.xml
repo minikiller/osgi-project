@@ -23,7 +23,7 @@
 
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.sunlf.test</groupId>
-  <artifactId>test-project</artifactId>
+  <artifactId>osgi-project</artifactId>
   <version>1.0</version>
 
   <name>com.sunlf.test.project (OSGi project)</name>
@@ -61,7 +61,7 @@
            | some example Pax-Runner settings
           -->
           <provision>
-            <param>--platform=felix</param>
+            <param>--platform=e</param>
           </provision>
         </configuration>
         <executions>
