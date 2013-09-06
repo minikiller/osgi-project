@@ -26,7 +26,7 @@ public final class ExampleActivator
         // add specific service properties here...
 
         System.out.println( "REGISTER com.sunlf.tp.testbirt.ExampleService" );
-
+        System.out.println("test");
         // Register our example service implementation in the OSGi service registry
         bc.registerService( ExampleService.class.getName(), new ExampleServiceImpl(), props );
     }
