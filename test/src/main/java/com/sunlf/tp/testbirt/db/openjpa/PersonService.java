@@ -1,4 +1,4 @@
-package com.sunlf.tp.db.openjpa;
+package com.sunlf.tp.testbirt.db.openjpa;
 
 import java.util.List;
 

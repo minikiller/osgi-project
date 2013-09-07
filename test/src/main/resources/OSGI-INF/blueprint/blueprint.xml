@@ -23,12 +23,12 @@
             xmlns:jpa="http://aries.apache.org/xmlns/jpa/v1.0.0"
             xmlns:tx="http://aries.apache.org/xmlns/transactions/v1.0.0">
 
-  <bean id="personService" class="com.sunlf.tp.db.openjpa.impl.PersonServiceImpl">
+  <bean id="personService" class="com.sunlf.tp.testbirt.db.openjpa.impl.PersonServiceImpl">
       <jpa:context unitname="person" property="entityManager"/>
       <tx:transaction method="*" value="Required"/>
   </bean>
   
-  <service ref="personService" interface="com.sunlf.tp.db.openjpa.PersonService" />
+  <service ref="personService" interface="com.sunlf.tp.testbirt.db.openjpa.PersonService" />
   
   <!--<command-bundle xmlns="http://karaf.apache.org/xmlns/shell/v1.0.0">
         <command name="person/add">

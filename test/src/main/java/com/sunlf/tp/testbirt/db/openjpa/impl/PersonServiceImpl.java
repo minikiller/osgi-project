@@ -1,9 +1,9 @@
-package com.sunlf.tp.db.openjpa.impl;
+package com.sunlf.tp.testbirt.db.openjpa.impl;
 
 
 
-import com.sunlf.tp.db.openjpa.Person;
-import com.sunlf.tp.db.openjpa.PersonService;
+import com.sunlf.tp.testbirt.db.openjpa.Person;
+import com.sunlf.tp.testbirt.db.openjpa.PersonService;
 
 import javax.persistence.EntityManager;
 import java.util.List;

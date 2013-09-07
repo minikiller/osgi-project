@@ -9,6 +9,23 @@
         <deploymentDescriptor name="persistence.xml" url="file://$MODULE_DIR$/src/main/resources/META-INF/persistence.xml" />
       </configuration>
     </facet>
+    <facet type="Osmorc" name="OSGi">
+      <configuration manifestGenerationMode="Manually" manifestLocation="-osgi.bnd" jarfileLocation="openjpa-1.0.jar" outputPathType="CompilerOutputPath" bndFileLocation="" bundlorFileLocation="" bundleActivator="" bundleSymbolicName="com.sunlf.tp.openjpa" bundleVersion="1.0" ignoreFilePattern="" useProjectDefaultManifestFileLocation="false" alwaysRebuildBundleJAR="false" doNotSynchronizeWithMaven="false">
+        <additionalProperties>
+          <property key="Bundle-Description" value="Generated using Pax-Construct" />
+          <property key="Embed-Dependency" value="*;scope=compile" />
+          <property key="Embed-Directory" value="WEB-INF/lib" />
+          <property key="Embed-Transitive" value="true" />
+          <property key="Export-Package" value="!com.sunlf.tp.testbirt.internal.*,com.sunlf.tp.testbirt.*;version=&quot;1.0&quot;" />
+          <property key="Private-Package" value="com.sunlf.tp.testbirt.internal.*,org.apache.jsp.*" />
+          <property key="Include-Resource" value="features/features.xml=$MODULE_DIR$/src/main/resources/features/features.xml,META-INF/persistence.xml=$MODULE_DIR$/src/main/resources/META-INF/persistence.xml,OSGI-INF/blueprint/blueprint.xml=$MODULE_DIR$/src/main/resources/OSGI-INF/blueprint/blueprint.xml,OSGI-INF/blueprint/datasource-derby.xml=$MODULE_DIR$/src/main/resources/OSGI-INF/blueprint/datasource-derby.xml,OSGI-INF/blueprint/datasource-mysql.xml.bak=$MODULE_DIR$/src/main/resources/OSGI-INF/blueprint/datasource-mysql.xml.bak,readme.txt=$MODULE_DIR$/src/main/resources/readme.txt,rebel.xml=$MODULE_DIR$/src/main/resources/rebel.xml" />
+          <property key="Import-Package" value="*;resolution:=optional" />
+          <property key="-include" value="-osgi.bnd" />
+          <property key="Bundle-Name" value="com.sunlf.tp.openjpa" />
+        </additionalProperties>
+        <additionalJARContents />
+      </configuration>
+    </facet>
   </component>
   <component name="NewModuleRootManager" inherit-compiler-output="false">
     <output url="file://$MODULE_DIR$/target/classes" />
@@ -21,7 +38,30 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="Maven: org.apache.geronimo.specs:geronimo-jpa_2.0_spec:1.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.osgi:org.osgi.compendium:4.2.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.osgi:org.osgi.core:4.2.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.geronimo.specs:geronimo-jta_1.1_spec:1.1.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.aries.transaction:org.apache.aries.transaction.blueprint:1.0.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.aries.transaction:org.apache.aries.transaction.manager:1.0.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.aries.jpa:org.apache.aries.jpa.blueprint.aries:1.0.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.aries.jpa:org.apache.aries.jpa.api:1.0.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.aries.jpa:org.apache.aries.jpa.container:1.0.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.aries.jpa:org.apache.aries.jpa.container.context:1.0.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.servicemix.bundles:org.apache.servicemix.bundles.commons-dbcp:1.4_3" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: commons-pool:commons-pool:1.5.4" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.ow2.asm:asm-all:4.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.geronimo.specs:geronimo-jpa_2.0_spec:1.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.openjpa:openjpa:2.2.2" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: commons-lang:commons-lang:2.4" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: commons-collections:commons-collections:3.2.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: net.sourceforge.serp:serp:1.14.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: junit:junit:3.8.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.geronimo.specs:geronimo-jms_1.1_spec:1.1.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: asm:asm:3.2" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: javax.xml.stream:stax-api:1.0-2" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.derby:derby:10.8.2.2" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: net.sourceforge.serp:com.springsource.serp:1.13.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.osgi:org.osgi.enterprise:5.0.0" level="project" />
   </component>
 </module>
 

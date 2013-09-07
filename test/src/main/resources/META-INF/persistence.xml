@@ -22,8 +22,9 @@
     version="1.0">
 
     <persistence-unit name="person" transaction-type="JTA">
-        <jta-data-source>osgi:service/javax.sql.DataSource/(osgi.jndi.service.name=jdbc/derbyds)</jta-data-source>
-        <class>com.sunlf.tp.db.openjpa.Person</class>
+        <!--<provider>org.apache.openjpa.persistence.PersistenceProviderImpl</provider>-->
+        <jta-data-source>osgi:service/javax.sql.DataSource/(osgi.jndi.service.name=jdbc/mysqlds)</jta-data-source>
+        <class>com.sunlf.tp.testbirt.db.openjpa.Person</class>
         <!--<provider></provider>-->
 
         <exclude-unlisted-classes>true</exclude-unlisted-classes>
@@ -35,8 +36,9 @@
             <!-- These properties are creating the database on the fly. We are using them to avoid users having
             to create a database to run the sample. This is not something that should be used in production.
             See also the create=true line in the ariestrader-derby-ds blueprint meta data -->
+            <property name="openjpa.Log" value="DefaultLevel=TRACE, Runtime=TRACE, Tool=TRACE, SQL=TRACE"/>
             <property name="openjpa.jdbc.SynchronizeMappings" value="buildSchema"/>
-            <property name="openjpa.jdbc.DBDictionary" value="derby"/>
+            <property name="openjpa.jdbc.DBDictionary" value="mysql"/>
         </properties>
     </persistence-unit>
 

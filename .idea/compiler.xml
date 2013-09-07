@@ -25,6 +25,7 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="com.sunlf.tp.testbirt" />
+        <module name="jpaclient" />
         <module name="test" />
       </profile>
     </annotationProcessing>
