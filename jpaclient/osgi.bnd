@@ -1,0 +1,12 @@
+#-----------------------------------------------------------------
+# Use this file to add customized Bnd instructions for the bundle
+#-----------------------------------------------------------------
+
+Bundle-Activator: ${bundle.namespace}.internal.ExampleActivator
+#打包后不包括web路径
+Include-Resource: {src/main/resources}
+#把类打包到WEB-INF/CLASS路径
+#-wab:src/main/webapp
+#打包类库
+#-wablib: {maven-dependencies}
+#Web-ContextPath:/test
