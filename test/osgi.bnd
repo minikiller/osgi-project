@@ -9,4 +9,5 @@ Include-Resource: {src/main/resources}
 -wab:src/main/webapp
 #打包类库
 #-wablib: {maven-dependencies}
+Meta-Persistence:META-INF/persistence.xml
 Web-ContextPath:/test
